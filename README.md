@@ -1,5 +1,7 @@
 # Prometheus_speedtest
 
+[![Build Status](https://travis-ci.com/dmaes/ansible-role-prometheus_speedtest.svg?branch=master)](https://travis-ci.com/dmaes/ansible-role-prometheus_speedtest)
+
 Installs and configures the prometheus_speedtest exorter (https://github.com/jeanralphaviles/prometheus_speedtest)
 
 ## Requirements

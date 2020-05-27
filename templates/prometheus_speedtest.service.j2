@@ -1,0 +1,19 @@
+{{ ansible_managed|comment }}
+
+[Unit]
+Description=Prometheus speedtest exporter
+Documentation={{ _prometheus_speedtest_homepage }}
+After=network-online.target
+
+[Service]
+Type=simple
+User={{ prometheus_speedtest_user }}
+Group={{ prometheus_speedtest_group }}
+ExecStart={{ _prometheus_speedtest_binary_directory }}/promehteus_speedtest \
+    --address={{ promehteus_speedtest_address }} \
+    --port={{ promehteus_speedtest_port }} \
+    {{ promehteus_speedtest_flags }}
+SyslogIdentifier=prometheus_speedtest
+
+[Install]
+WantedBy=multi-user.target

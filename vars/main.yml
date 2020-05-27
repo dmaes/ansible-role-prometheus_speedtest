@@ -1,2 +1,3 @@
 _prometheus_speedtest_virtualenv: /var/lib/prometheus_speedtest
 _prometheus_speedtest_binary_directory: /usr/local/bin
+_prometheus_speedtest_homepage: https://pypi.org/project/prometheus-speedtest/

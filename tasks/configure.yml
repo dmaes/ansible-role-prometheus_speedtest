@@ -1,0 +1,8 @@
+- name: Copy systemd unit file
+  template:
+    src: prometheus_speedtest.service.j2
+    dest: /lib/systemd/system/prometheus_speedtest.service
+    owner: root
+    group: root
+    mode: 0644
+  notify: systemd service changed

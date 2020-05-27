@@ -1,5 +1,6 @@
 galaxy_info:
   author: dmaes
+  role_name: prometheus_speedtest
   description: Installs and configures the prometheus_speedtest exorter (https://github.com/jeanralphaviles/prometheus_speedtest)
   license: MIT
   min_ansible_version: 2.9

@@ -1,3 +1,21 @@
+- name: Ensure prometheus_speedtest group
+  group:
+    name: "{{ prometheus_speedtest_group }}"
+    system: yes
+    state: present
+  when: prometheus_speedtest_group != 'root'
+
+- name: Ensure prometheus_speedtest user
+  user:
+    name: "{{ prometheus_speedtest_user }}"
+    group: "{{ prometheus_speedtest_group }}"
+    shell: /usr/sbin/nologin
+    system: yes
+    home: "{{ _prometheus_speedtest_virtualenv }}"
+    create_home: no
+    state: present
+  when: prometheus_speedtest_user != 'root'
+
 - name: Install prometheus_speedtest
   pip:
     name: prometheus_speedtest

@@ -1,2 +1,2 @@
-_prometheus_speedtest_virtualenv: /usr/local/share/prometheus_speedtest
+_prometheus_speedtest_virtualenv: /var/lib/prometheus_speedtest
 _prometheus_speedtest_binary_directory: /usr/local/bin

@@ -1,0 +1,17 @@
+galaxy_info:
+  author: dmaes
+  description: Installs and configures the prometheus_speedtest exorter (https://github.com/jeanralphaviles/prometheus_speedtest)
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: Debian
+      versions:
+        - buster
+  galaxy_tags:
+    - monitoring
+    - prometheus
+    - exporter
+    - metrics
+    - speedtest
+dependencies: []
+  

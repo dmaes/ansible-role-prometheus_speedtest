@@ -1,0 +1,12 @@
+- name: Install prometheus_speedtest
+  pip:
+    name: prometheus_speedtest
+    version: "{{ prometheus_speedtest_version }}"
+    virtualenv: "{{ _prometheus_speedtest_virtualenv }}"
+    virtualenv_python: python3.7
+
+- name: Install binary
+  template:
+    src: prometheus_speedtest.sh.j2
+    dest: "{{ _prometheus_speedtest_binary_directory }}/prometheus_speedtest"
+    mode: u=rwx,go=rx

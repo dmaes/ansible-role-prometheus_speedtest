@@ -1,2 +1,4 @@
----
-# tasks file for dmaes.prometheus_speedtest
+- name: Install prometheus_speedtest
+  include: install.yml
+  tags:
+    - prometheus_speedtest_install

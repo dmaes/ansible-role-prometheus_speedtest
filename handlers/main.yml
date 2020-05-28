@@ -4,3 +4,5 @@
     name: prometheus_speedtest
     daemon_reload: yes
     state: restarted
+  listen:
+    - systemd service changed
